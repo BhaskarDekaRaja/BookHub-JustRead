@@ -1,0 +1,43 @@
+<div id="userContent">
+  <div id="userHead">
+      <!--This is userHead<br> -->
+      <strong id="heading">Your Account</strong>
+  </div>
+
+  <div id="userDashboard">
+   <!-- This is userDashboard<br> -->
+
+        <div class="userAcountNavg">
+            <ul>
+                <li><a routerLink="account-details">Account Details</a></li>
+                <li><a routerLink="order-details">Your Orders</a></li>
+                <li><a routerLink="address-details">Your Address</a></li>
+            </ul>
+            <!--   <div class="optSection">
+                        section1
+                    </div>
+                    <div class="optSection">
+                        section2
+                    </div>
+                    <div class="optSection">
+                        section3
+                    </div>
+                -->
+        </div>
+
+        <div id="divUserFarme">
+                <hr>
+                <router-outlet></router-outlet>
+                <hr>
+              <!-- <hr>
+             <app-details></app-details>
+                <hr>
+             <app-orders></app-orders>
+                <hr>
+             <app-address></app-address>
+                <hr>
+              -->
+        </div>
+
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div id="userContent">
+    <div id="userHead" style="text-align:center;">
+        <!--This is userHead<br> -->
+        <strong id="heading">Book Categories</strong>
+    </div>
+  
+    <div id="userDashboard">
+     <!-- This is userDashboard<br> -->
+  
+          <div class="userAcountNavg">
+              <ul>
+                  <li><a routerLink="fiction">Fiction</a></li>
+                  <li><a routerLink="nonFiction">Non-Fiction</a></li>
+                  <li><a routerLink="loveStories">Love-Stories</a></li>
+                  <li><a routerLink="healthBeauty">Health & Beauty</a></li>
+                  <li><a routerLink="horror">Horror</a></li>
+              </ul>
+          </div>
+  
+          <div id="divUserFarme">
+                  <hr>
+                  <router-outlet></router-outlet>
+                  <hr>
+          </div>
+  
+    </div>
+  </div>

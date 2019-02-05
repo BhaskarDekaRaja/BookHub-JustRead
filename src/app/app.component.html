@@ -1,21 +1,99 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+<div class="jumbotron" id="app-header">
+    <div class="applogo" style="float:left; height: 150px; width: 200px;">
+        <img src="../assets/bookhubImg.png" style="height: 100%; width: 100%">
+    </div>
+      <p><i>An Ultimate Companinon...</i></p>
+</div>
+  
+<div class="navBar">
+    <ul>
+      <li>
+        <a routerLink=''>Home</a> |
+      </li>
+      <li class="dropdown">
+        <a routerLink='categories'>Categories</a>|
+          <div class="dropdown_list">
+            <a routerLink="books">&nbsp;&nbsp;Books</a>
+            <a routerLink="articles">Articles</a>
+            <a routerLink="e-book">E-Book</a>
+          </div>
+      </li>
+      <li>
+          <a routerLink="user-account">User Account</a>|
+      </li>
+      <li>
+          <a routerLink='about-us'>About Us</a>|
+      </li>
+      <li>
+        <a routerLink='contact-us'>Contact Us</a>
+      </li>
+    </ul>
+  
+        <a class="optNavRight" routerLink='sign-up'>Sign Up </a>
+        <a class="optNavRight" routerLink='sign-in'>Sign In </a> 
+</div>
+
+ <router-outlet></router-outlet>
+
+<div id="footer" class="jumbotron">
+    <div class="imgs">
+        <i><b>Our Customer care support is available 24/7 : +9185555555</b></i>
+        <a href="https://www.facebook.com/">
+              <img src="./assets/fb.png" style="border-radius:10px; width:30px; height:30px; float:right;"/>
+        </a>
+        <a href="https://www.twitter.com/">
+              <img src="./assets/tw.png" style="border-radius:10px; width:30px; height:30px; float:right;"/>
+        </a>
+        <a href="https://www.gmail.com/">
+              <img src="./assets/gmail.png" style="border-radius:10px; width:30px; height:30px; float:right;"/>
+        </a>
+    </div>
+
+    <hr>
+
+    <div class="left">
+        <img src="../assets/bookhubImg.png"  height="40px" width="100px">
+        <p>
+            This website deals with an e-commerce platform for Online Book Library and Book Sale.
+            It provides the user with a catalog of different books available for Online Reading as 
+            a Library Service and also purchase the hard-copy of the book from the store.
+        </p>
+    </div>
+
+    <div class="right">
+      <h4>Address Line</h4>
+      <address>
+          #8,2ndFloor, <br>
+          BTM Layout, <br>
+          2nd Stage, <br>
+          Udupi garden bus stop, <br>
+          Bangalore-560 076 <br>
+          Ph: +9185555555 <br>
+          Email:contact@bookhub.in
+      </address>
+    </div>
+
+    <div class="cats">
+      <h4>Categories</h4>
+      <p>
+          Fiction<br>
+          Non-Fiction<br>
+          Love Stories<br>
+          Health & Beauty<br>
+          Horror<br>
+          Biography
+      </p>
+    </div>
+
+    <div class ="center">
+      <h4>Get to know Us</h4>
+      <p>
+        About<br>
+        Contact us<br>
+        Career<br>
+        Help Center
+      </p>
+    </div>
+</div>
+  <div class="foot">&copy; Copyright reserved by Bookhub.in</div>

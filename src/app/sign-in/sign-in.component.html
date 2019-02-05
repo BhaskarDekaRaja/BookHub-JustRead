@@ -1,0 +1,13 @@
+
+<div class="signin">
+    <div class="unm"> 
+      <span class="label">User Name: </span><br><input type="text" placeholder="User Name" #Unm required>
+    </div>
+    <div class="pwd"> 
+      <span class="label">Password: </span><br><input type="password" placeholder="Password" #pwd  required >
+    </div>
+    <div class="submit"> 
+      <button type="submit" id="bt1" (click)='pwdValidation(Unm.value,pwd.value)'>Sign In</button>
+    </div>
+  
+  </div>

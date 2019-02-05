@@ -1,0 +1,24 @@
+.signup{
+    text-align: center;
+    border: 1px solid;
+    border-radius: 45px;
+    opacity:0.8;
+    background-color: rgb(187, 158, 104);
+    width:35%;
+    margin-left:32% ;
+    font-weight: bold;
+    font-size: 110%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+input[type=text],input[type=number],input[type=email],input[type=password] {
+    width: 60%;
+    padding: 15px 15px;
+    color:darkgreen;
+    background-color:rgb(228, 211, 188);
+    border-radius:15px; 
+}
+
+.fnm,.lnm,.phn1,.phn2,.Email1,.Email2,.unm,.pwd,.submit
+{
+    padding: 10px;
+}

@@ -1,0 +1,120 @@
+<div id="mainAddress">
+    <label for="addressContainer" style="font-size:20px; color: whitesmoke; text-shadow: 2px 2px 10px black;">
+        <b>Your Address</b>
+    </label>
+    <div id="addressContainer">                                               <!--============================ADDRESS DISPLAY BOX===============================-->
+        <div id="addressRow">
+                <p [innerText]="userName"></p>
+                <p [innerText]="userAddress1"></p>
+                <p [innerText]="userAddress2"></p>
+                <p [innerText]="userAddress3"></p>
+                <p [innerText]="userAddress4"></p>
+                <p [innerText]="userAddressPIN"></p>
+                <button class="open-button" (click)="openForm()">Edit</button>
+        </div>
+
+        <div id="updateAddress">
+                <div class="form-popup form-container" id="myForm" [style.display]="frmDsplay">
+                    <h3>Edit Address</h3>
+                    <div class="fieldContainer">                            <!--============================EDIT - NAME===============================-->
+                        <div class="fieldElement">
+                                <label for="uName"><b>Name : </b></label>
+                        </div>
+                        <div class="fieldElement">
+                                <input type="text" [value]="userName" id="uName" #editUserName required >
+                        </div>
+                   </div>
+                   <div class="fieldContainer">                            <!--============================EDIT - ADDRESS LINE 1===============================-->
+                        <div class="fieldElement">
+                                <label for="uAdrsLine1"><b>Address Line 1 : </b></label>
+                        </div>
+                        <div class="fieldElement">
+                                <input type="text" [value]="userAddress1" id="uAdrsLine1" #editAdrsLine1 required >
+                        </div>
+                   </div>
+                   <div class="fieldContainer">                            <!--============================EDIT - ADDRESS LINE 2===============================-->
+                        <div class="fieldElement">
+                                <label for="uAdrsLine1"><b>Address Line 2 : </b></label>
+                        </div>
+                        <div class="fieldElement">
+                                <input type="text" [value]="userAddress2" id="uAdrsLine2" #editAdrsLine2 required >
+                        </div>
+                   </div>
+                   <div class="fieldContainer">                            <!--============================EDIT - ADDRESS LINE 3===============================-->
+                        <div class="fieldElement">
+                                <label for="uAdrsLine1"><b>Address Line 3 : </b></label>
+                        </div>
+                        <div class="fieldElement">
+                                <input type="text" [value]="userAddress3" id="uAdrsLine3" #editAdrsLine3 required >
+                        </div>
+                   </div>
+                   <div class="fieldContainer">                            <!--============================EDIT - ADDRESS LINE 4===============================-->
+                        <div class="fieldElement">
+                                <label for="uAdrsLine1"><b>Address Line 4 : </b></label>
+                        </div>
+                        <div class="fieldElement">
+                                <input type="text" [value]="userAddress4" id="uAdrsLine4" #editAdrsLine4 required >
+                        </div>
+                   </div>
+                   <div class="fieldContainer">                            <!--============================EDIT - ADDRESS PIN===============================-->
+                        <div class="fieldElement">
+                                <label for="uAdrsPIN"><b>PIN : </b></label>
+                        </div>
+                        <div class="fieldElement">
+                                <input type="text" [value]="userAddressPIN" id="uAdrsPIN" #editAdrsPIN required>
+                        </div>
+                   </div>
+
+                   <button type="submit" class="btn" (click)="updateAddress(
+                                                                    editUserName.value,
+                                                                    editAdrsLine1.value,
+                                                                    editAdrsLine2.value, 
+                                                                    editAdrsLine3.value, 
+                                                                    editAdrsLine4.value,
+                                                                    editAdrsPIN.value 
+                                                                            )">Submit</button>
+
+                      <button type="button" class="btn cancel" (click)="closeForm()">Close</button>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+            <!--
+            <div class="addressRow" id="editAddress" >
+                <label for="addName">User Name : </label>
+                    <input type="text" [value]="userName" id="addName" #uName/><br/>
+                    <div>
+                        <label for="addLine1">Address Line-1 : </label>
+                            <input type="text" [value]="userAddress1" id="addLine1" #uAddress1/><br/>
+                        <label for="addLine2">Address Line-2 : </label>
+                            <input type="text" [value]="userAddress2" id="addLine2" #uAddress2/><br/>
+                        <label for="addLine3">Address Line-3 : </label>
+                            <input type="text" [value]="userAddress3" id="addLine3" #uAddress3/><br/>
+                        <label for="addLine4">Address Line-4 : </label>
+                            <input type="text" [value]="userAddress4" id="addLine4" #uAddress3/><br/>
+                        <label for="addPIN">PIN : </label>
+                            <input type="number" [value]="userAddressPIN" id="addPIN" #uAddressPIN/><br/>
+                    </div>
+            </div>
+            
+            <div class="addressRow">
+                <p [innerText]="userName"></p>
+                <p [innerText]="userAddress1"></p>
+                <p [innerText]="userAddress2"></p>
+                <p [innerText]="userAddress3"></p>
+                <p [innerText]="userAddress4"></p>
+                <p [innerText]="userAddressPIN"></p>
+                
+                <input type="text" [disabled]="isDisabled" [value]="userName" #uName/><br/>
+                <div>
+                    <input type="text" [disabled]="isDisabled" [value]="userAddress1" #uAddress1/><br/>
+                    <input type="text" [disabled]="isDisabled" [value]="userAddress2" #uAddress2/><br/>
+                    <input type="text" [disabled]="isDisabled" [value]="userAddress3" #uAddress3/><br/>
+                    <input type="text" [disabled]="isDisabled" [value]="userAddress4" #uAddress3/><br/>
+                    <input type="number" [disabled]="isDisabled" [value]="userAddressPIN" #uAddressPIN/><br/>
+                </div>
+                
+            </div>
+           <button (click)="editAddress()">Edit</button> -->

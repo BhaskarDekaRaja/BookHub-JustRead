@@ -1,0 +1,39 @@
+
+<div class="signup">
+		
+    <h2>SignUp here</h2>
+  
+    <div class="fnm"> 
+      <span class="label">First Name: </span><br><input type="text"  placeholder="First Name" #fNM required>
+    </div>
+    <div class="lnm"> 
+      <span class="label">Last Name: </span><br><input type="text"  placeholder="Last Name" #lNM required >
+    </div>
+    <div class="phn1"> 
+      <span class="label">Phone No: </span><br><input type="number"  placeholder="PhoneNo" #phone1 required>
+    </div>
+    <div class="phn2"> 
+      <span class="label">Other Phone No: </span><br><input type="number" #phone2 placeholder="PhoneNo">
+    </div>
+    <div class="Email1"> 
+      <span class="label">Email: </span><br><input type="email"  placeholder="Email" #email1 required>
+    </div>
+    <div class="Email2"> 
+      <span class="label">Other Email: </span><br><input type="email"  placeholder="Email" #email2>
+    </div>
+    <div class="gender"> 
+      <span class="label">Gender </span><br><input type="radio" value="Male" name="Gender" #gender checked>Male&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" value="Female" name="Gender" #gender>Female&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" value="other" name="Gender" #gender>Other
+    </div>
+    <div class="unm"> 
+      <span class="label">User Name: </span><br><input type="text" placeholder="User Name" #Unm required>
+    </div>
+    <div class="pwd"> 
+      <span class="label">Password: </span><br><input type="password" placeholder="Password" #pwd  required >
+    </div>
+    <div class="submit"> 
+      <button type="submit" id="bt1" (click)='pwdValidation(Unm.value,pwd.value)'>SignUp</button>
+    </div>
+  
+  </div>

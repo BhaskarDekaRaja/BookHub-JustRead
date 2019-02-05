@@ -1,0 +1,66 @@
+/*
+#orderMain
+{
+    text-align: center;
+}
+*/
+#orderNav{
+    background: darkslategray;
+    overflow: hidden;
+}
+#orderNav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#orderNav ul li{
+    float: left;
+}
+#orderNav ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+#orderNav ul li a:hover
+{
+    color: rgb(247, 152, 152);
+}
+
+.orderRow
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.orderCol
+{
+    flex: 40%;
+}
+
+.col1
+{
+    text-align: right;  
+    text-shadow: 2px 2px 5px gray;
+    padding: 5px;
+    background-color: lightgray; 
+}
+.col2
+{
+    text-align: center;
+    text-shadow: 2px 2px 5px gray;
+    padding: 5px;
+    background-color: azure;
+}
+
+#orderDisplay
+{
+    text-align: center;
+}
+#orderContainer
+{
+    width: 50%;
+    display: inline-block;
+}

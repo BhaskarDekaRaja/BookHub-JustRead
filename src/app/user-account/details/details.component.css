@@ -1,0 +1,55 @@
+.accountRow
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#accountInfo
+{
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+label
+{
+    color: whitesmoke;
+    text-shadow: 2px 2px 10px black;
+}
+.accountCol
+{
+    flex: 40%;
+    padding: 5px;
+}
+
+.accountCol1
+{
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subCol
+{
+    flex: 30%;
+}
+
+.txtAccount
+{
+    width: 100%;
+    box-shadow: 2px 2px 5px black;
+}
+.accountCol2
+{
+    text-align: center;
+}
+
+.btnAccount
+{
+    height: 25px;
+    width: 200px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#accountInfoRow5Col12
+{
+    padding: 20px;
+}

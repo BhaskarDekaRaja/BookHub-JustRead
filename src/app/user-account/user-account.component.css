@@ -1,0 +1,81 @@
+div
+{
+    border: 1px solid gray;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#userContent
+{
+    width: 100%;
+}
+#userHead
+{
+    height: 10%;
+    width: 100%;
+    color: whitesmoke;
+    background-color: rgba(137, 43, 226, 0.349);
+    text-shadow: 2px 2px 5px black;
+}
+#heading
+{
+    font-size: 30px;
+}
+
+#userDashboard
+{
+    height: 90%;
+    width: 100%;
+}
+
+.userAcountNavg
+{
+    overflow: hidden;
+    background-color: rgba(245, 84, 84, 0.486);
+    border-radius: 5px;
+    text-shadow: 2px 2px 10px black;	
+}
+
+.userAcountNavg ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.userAcountNavg ul li
+{
+    float: left;
+}
+
+.userAcountNavg ul li a {
+    float: left;
+    display: block;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.userAcountNavg ul li a:hover{
+    background-color:rgba(240,255,200,0.5);
+    color: red;
+    border-radius: 5px;
+}
+
+#divUserFarme
+{
+    height: 75%;
+    width: 100%;
+}
+

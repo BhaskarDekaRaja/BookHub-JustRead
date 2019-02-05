@@ -1,0 +1,98 @@
+<div id="orderMain">  <!--==============================Main-BOdy-->
+  <div id="orderNav"> <!--================================================Navigation Bar-->
+    <ul>
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">Successful Orders</a></li>
+      <li><a href="#">Cancled Orders</a></li>
+    </ul>
+  </div>
+
+  <div id="orderDisplay">
+      <div id="orderContainer"> <!--===================================Order-List-->
+            <div class="orderRow">  <!-- ===============================================Order-ID-->
+                <div class="orderCol col1">
+                  <b>Order ID :</b> 
+                </div>
+                <div class="orderCol col2">
+                    {{ orderID }}
+                </div>
+            </div>
+            <div class="orderRow">  <!-- ===============================================Order-Date-->
+                <div class="orderCol col1">
+                  <b>Order Date :</b> 
+                </div>
+                <div class="orderCol col2">
+                    {{ orderDate }}
+                </div>
+            </div>
+            <div class="orderRow"><!-- ===============================================Order-BookTitle-->
+                <div class="orderCol col1">
+                  <b>Book Title :</b> 
+                </div>
+                <div class="orderCol col2">
+                    {{ orderBookTitle }}
+                </div>
+            </div>
+            <div class="orderRow"><!-- ===============================================Order-BookTitle-->
+                <div class="orderCol col1">
+                  <b>Delivery Status :</b> 
+                </div>
+                <div class="orderCol col2">
+                    {{ orderDiliveryStatus }}
+                </div>
+            </div>
+        <div class="orderRow">  <!-- ===============================================Order-Delivery-Date-->
+          <div class="orderCol col1">
+            <b>Delivery Date :</b> 
+          </div>
+          <div class="orderCol col2">
+              {{ orderDeliveryDate }}
+          </div>
+        </div>
+        <div class="orderRow">  <!-- ===============================================Order-Item(s) Sub-Total -->
+          <div class="orderCol col1">
+            <b>Item(s) Sub-Total :</b> 
+          </div>
+          <div class="orderCol col2">
+            &#8377;  {{ orderSubTotal }}
+          </div>
+        </div>
+        <div class="orderRow">  <!-- ===============================================Order-Item(s) Shiping--Charges -->
+          <div class="orderCol col1">
+            <b>Shiping Charges :</b> 
+          </div>
+          <div class="orderCol col2">
+          {{ orderShipCharge }}
+          </div>
+        </div>
+        <div class="orderRow">  <!-- ===============================================Order-Item(s) Total -->
+          <div class="orderCol col1">
+            <b>Total :</b>
+          </div>
+          <div class="orderCol col2">
+            &#8377; {{ orderTotal }}
+          </div>
+        </div>
+        <div class="orderRow">  <!-- ===============================================Order-Item(s) Promotion -->
+          <div class="orderCol col1">
+            <b>Promotion Applied :</b> 
+          </div>
+          <div class="orderCol col2">
+          - &#8377; {{ orderPromotion }}
+          </div>
+        </div>
+        <div class="orderRow">  <!-- ===============================================Order-Item(s) Grand-Total -->
+          <div class="orderCol col1">
+            <b>Grand-Total :</b> 
+          </div>
+          <div class="orderCol col2">
+            &#8377; {{ orderGrandTotal }}
+          </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+

@@ -1,0 +1,19 @@
+.head{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 2px 2px 10px black;
+    background-color: rgba(137, 43, 226, 0.308);
+}
+.down{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    width: 100%;
+}
+.down p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}

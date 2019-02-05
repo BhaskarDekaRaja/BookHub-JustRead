@@ -1,0 +1,59 @@
+<div id="accountInfo">
+        <div class="accountRow" id="accountInfoRow1">             <!--==================ROW-1: User-Name==========-->
+            <div class="accountCol accountCol1" id="accountInfoRow1Col1">
+                    <div class="subCol">
+                        <label for="txtUsrName"><b>Name : </b></label>
+                    </div>
+                    <div class="subCol">
+                        <input type="text" [disabled]="isDisabled1" [value]="uName" class="txtAccount" id="txtUsrName"/>
+                    </div>
+            </div>
+            <div class="accountCol accountCol2" id="accountInfoRow1Col2">
+                    <button class="btnAccount" id="btnName" (click)="enableField1()">Edit</button>
+            </div>
+        </div>
+        <div class="accountRow" id="accountInfoRow2">            <!--==================ROW-2: E-Mail==========-->
+            <div class="accountCol accountCol1" id="accountInfoRow2Col1">
+                    <div class="subCol">
+                        <label for="txtUsrEmail"><b>Email : </b></label>
+                    </div>
+                    <div class="subCol">
+                        <input type="text" [disabled]="isDisabled2" [value]="uEmail" class="txtAccount" id="txtUsrEmail"/>
+                    </div>
+            </div>
+            <div class="accountCol accountCol2" id="accountInfoRow2Col2">
+                <button class="btnAccount" id="btnName" (click)="enableField2()">Edit</button>
+            </div>
+        </div>
+        <div class="accountRow" id="accountInfoRow3">            <!--==================ROW-3 : PHONE No.==========-->
+            <div class="accountCol accountCol1" id="accountInfoRow3Col1">
+                    <div class="subCol">
+                        <label for="txtUsrEmail"><b>Phone Number : </b></label>
+                    </div>
+                    <div class="subCol">
+                        <input type="text" [disabled]="isDisabled3" [value]="uPhone" class="txtAccount" id="txtUsrPhone"/>
+                    </div>
+            </div>
+            <div class="accountCol accountCol2" id="accountInfoRow3Col2">
+                <button class="btnAccount" id="btnName" (click)="enableField3()">Edit</button>
+            </div>
+        </div>
+        <div class="accountRow" id="accountInfoRow4">            <!--==================ROW-4 : PASSWORD==========-->
+            <div class="accountCol accountCol1" id="accountInfoRow4Col1">
+                <div class="subCol">
+                    <label for="txtUsrPswrd"><b>Password : </b></label>
+                </div>
+                <div class="subCol">
+                    <input type="text" [disabled]="isDisabled4" [value]="uPswrd" class="txtAccount" id="txtUsrPswrd"/>
+                </div>
+            </div>
+            <div class="accountCol accountCol2" id="accountInfoRow4Col2">
+                <button class="btnAccount" id="btnName" (click)="enableField4()">Edit</button>
+            </div>
+        </div>
+        <div class="accountRow" id="accountInfoRow5">            <!--==================ROW-5==========-->
+          <div class="accountCol accountCol2" id="accountInfoRow5Col12">
+                <button class="btnAccount" id="btnName" (click)="disableAllFields()">Done</button>
+          </div>
+      </div>
+</div>
